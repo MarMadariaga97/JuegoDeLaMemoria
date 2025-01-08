@@ -1,8 +1,8 @@
-Vaca
-Perro
-Pinguino
-Conejillo
-Carpincho
-Gato
-Jirafa
-Conejo
+gato
+perro
+jirafa
+conejoIndia
+carpincho
+pinguino
+vaca
+conejo

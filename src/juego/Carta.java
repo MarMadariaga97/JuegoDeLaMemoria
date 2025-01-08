@@ -1,14 +1,14 @@
 package juego;
 
-//import java.awt.Image;
+import javax.swing.ImageIcon;
 
 public class Carta {
 	private String palabra;
-	//private Image imagen;
+	private ImageIcon imagen;
 
-    public Carta(String p) {
+    public Carta(String p, ImageIcon i) {
         this.palabra = p;
-       // this.imagen = im;
+       this.imagen = i;
     }
 
     
@@ -23,14 +23,14 @@ public class Carta {
     		return false;
     }
     
-   /* // Métodos getter y setter para el atributo imagen
-    public Image getImagen() {
-        return imagen;
+   // Métodos getter y setter para el atributo imagen
+    public ImageIcon getImagen() {
+        return this.imagen;
     }
 
-    public void setImagen(Image imagen) {
+    public void setImagen(ImageIcon imagen) {
         this.imagen = imagen;
     }
-    */
+    
     
 }

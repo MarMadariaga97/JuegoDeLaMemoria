@@ -1,10 +1,13 @@
 package juego;
 
+import java.awt.Image;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
+
+import javax.swing.ImageIcon;
 
 public class Tablero {
  private ArrayList<Carta> listadoCartas;
@@ -23,15 +26,17 @@ public class Tablero {
 	 try {
 	        BufferedReader lector = new BufferedReader(new FileReader(archivo));
 
-	        String linea;
-	        int i=0;
-	        while (i<=16 && (linea = lector.readLine()) != null) {
-	        	Carta c=new Carta(linea);
-	        	Carta c1=new Carta(linea);
+	        String palabra;
+	       
+	        while ((palabra = lector.readLine()) != null) {
+	        	String ruta="src/imagenes/"+palabra+".png";
+	        	ImageIcon im= new ImageIcon(ruta);
+	        	Carta c=new Carta(palabra, im);
+	        	Carta c1=new Carta(palabra, im);
 	            this.listadoCartas.add(c);
 	            this.listadoCartas.add(c1);
 	        
-	           i++;
+	           
 	        }
 	        
 	        //Mezcla los elementos del arrayList listadoDeCartas
@@ -61,13 +66,6 @@ public class Tablero {
 	 return this.tabla;
  }
  
- public boolean sonIguales(Carta c1, Carta c2) {
-	 if(c1.getPalabra().equals(c2.getPalabra())){
-		 return true;
-	 }
-	 else
-		 return false;
- }
  
  
 }
