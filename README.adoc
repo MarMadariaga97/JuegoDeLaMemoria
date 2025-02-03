@@ -1,0 +1,61 @@
+Juego de Memoria
+
+Descripción
+
+Este es un juego de memoria desarrollado en Java utilizando la biblioteca Swing para la interfaz gráfica. El objetivo del juego es encontrar y emparejar todas las cartas en el menor tiempo posible.
+
+
+Características
+
+- Juego para dos jugadores.
+
+- Interfaz gráfica interactiva con botones que representan las cartas.
+
+- Cambio de turnos automático.
+
+- Sistema de puntuación, que muestra los aciertos de cada jugador.
+
+- Detección de ganador al final de la partida.
+
+- Opción de reiniciar el juego sin cerrar la aplicación.
+
+Capturas de pantalla
+
+(Aquí puedes agregar imágenes del juego en funcionamiento)
+
+Instalación y ejecución
+
+Requisitos previos
+
+- Java JDK 8 o superior
+- IDE compatible con Java (Eclipse, IntelliJ, NetBeans, etc).
+
+
+Cómo jugar
+
+1. Se mostrarán 16 cartas boca abajo en un tablero de 4x4.
+
+2. Jugador 1 elige dos cartas haciendo clic sobre ellas.
+
+	- Si las cartas son iguales, obtiene un punto y juega de nuevo.
+
+	- Si las cartas son diferentes, el turno pasa al Jugador 2.
+
+3. El juego continúa hasta que todas las cartas hayan sido emparejadas.
+
+4. El jugador con más aciertos al final gana la partida.
+
+5. Se mostrará el nombre del ganador y la opción para volver a jugar.
+
+Problemas encontrados y soluciones
+	- Tiempo de espera tras seleccionar cartas: 
+	Se implementó un Timer para permitir ver las cartas antes de 	ocultarlas.
+
+	- Excepción IndexOutOfBoundsException al seleccionar cartas 	rápidamente: 
+	Se corrigió asegurando que la lista de cartas seleccionadas tenga 	siempre dos elementos antes de acceder a ellos.
+
+	- Error al deshabilitar botones sin cambiar su apariencia: Se resolvió 	modificando los iconos de las cartas deshabilitadas.
+
+Conclusiones 
+Este proyecto me permitió desarrollar habilidades en Java y en el manejo de interfaces gráficas con Swing. Además, enfrenté y resolví problemas comunes de desarrollo, como errores de lógica, gestión de eventos en Swing y control de versiones con Git. 
+El proceso reforzó el pensamiento lógico y la depuración de código, brindando una experiencia valiosa en el desarrollo de software interactivo.
