@@ -21,7 +21,7 @@ Características
 
 Capturas de pantalla
 
-(Aquí puedes agregar imágenes del juego en funcionamiento)
+-
 
 Instalación y ejecución
 
@@ -48,6 +48,7 @@ Cómo jugar
 5. Se mostrará el nombre del ganador y la opción para volver a jugar.
 
 Problemas encontrados y soluciones
+
 	- Tiempo de espera tras seleccionar cartas: 
 	Se implementó un Timer para permitir ver las cartas antes de 	ocultarlas.
 
@@ -57,5 +58,6 @@ Problemas encontrados y soluciones
 	- Error al deshabilitar botones sin cambiar su apariencia: Se resolvió 	modificando los iconos de las cartas deshabilitadas.
 
 Conclusiones 
+
 Este proyecto me permitió desarrollar habilidades en Java y en el manejo de interfaces gráficas con Swing. Además, enfrenté y resolví problemas comunes de desarrollo, como errores de lógica, gestión de eventos en Swing y control de versiones con Git. 
 El proceso reforzó el pensamiento lógico y la depuración de código, brindando una experiencia valiosa en el desarrollo de software interactivo.
