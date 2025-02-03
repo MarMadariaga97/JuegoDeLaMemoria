@@ -1,0 +1,8 @@
+gato
+perro
+jirafa
+conejoIndia
+carpincho
+pinguino
+vaca
+conejo
